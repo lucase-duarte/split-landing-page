@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  height: 100%;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  display: grid;
+  place-items: center;
+  text-wrap: nowrap;
+  overflow: hidden;
+  transition: width ease .3s;
+}
+
+.left {
+  position: relative;
+  background: url('https://stevivor.com/wp-content/uploads/2020/06/PS5_RENDER_WITHNOTICE_01.webp') no-repeat center center/cover;
+
+}
+
+.overlay {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.95;
+  transition: opacity ease .3s;
+}
+
+.left .overlay {
+  background-color: #006fcd;
+}
+
+.right .overlay {
+  background-color: #107C10;
+}
+
+.right {
+  position: relative;
+  background: url('https://image.made-in-china.com/2f0j00tBLlyYUMhqRd/High-Quality-xBox-Series-X-Super-Console.webp') no-repeat center center/cover;
+}
+
+.text {
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  transition: background ease .3s;
+}
+
+.text h1 {
+  margin: 0;
+}
+
+.text a {
+  margin-top: 15px;
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 18px;
+  border: 3px solid white;
+  padding: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.text a:hover {
+  color: rgb(216, 216, 216);
+  border-color: rgb(216, 216, 216);;
+}
+
