@@ -29,7 +29,6 @@ body {
 .left {
   position: relative;
   background: url('https://stevivor.com/wp-content/uploads/2020/06/PS5_RENDER_WITHNOTICE_01.webp') no-repeat center center/cover;
-
 }
 
 .overlay {
@@ -60,12 +59,14 @@ body {
   z-index: 2;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
+  width: 265px;
   transition: background ease .3s;
 }
 
 .text h1 {
   margin: 0;
+  font-size: 36px;
 }
 
 .text a {
@@ -76,7 +77,8 @@ body {
   text-transform: capitalize;
   font-size: 18px;
   border: 3px solid white;
-  padding: 10px;
+  width: 150px;
+  padding: 15px;
   cursor: pointer;
   display: inline-block;
 }
